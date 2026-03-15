@@ -1,16 +1,16 @@
 function Dobluyusss() {
-  new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
-      const Alhaji = true;
-      if (Alhaji) {
-        resolve(" OKay so wetin happen");
-      } else {
-        reject(" You dey go naw");
-      }
-     }, 2000);
-    });
-  };
+      if (Dobluyusss) {
+        const Dobluyusss = true;
 
+        resolve("I know you are a goat!!");
+      } else {
+        reject("Getout of my face!!!!!!");
+      }
+    }, 2000);
+  });
+}
 
 async function ShartMehn() {
   const DobluyusssRese = await Dobluyusss();
