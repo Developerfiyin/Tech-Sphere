@@ -1,14 +1,16 @@
-body{
-    background: chocolate;
-    box-sizing: border-box;
-    height: 100vh;
-  color: firebrick;
-}
+
 
 *{
     margin: 0;
     padding: 0;
 
+}
+
+body{
+    background: chocolate;
+    box-sizing: border-box;
+    height: 100vh;
+  color: firebrick;
 }
 h1 {
 color: brown;
