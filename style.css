@@ -6,7 +6,7 @@
 body {
   background: blueviolet ;
   box-sizing: border-box;
-  height: 100%;
+  height: 100vh;
   color: aqua;
 font-family: cursive;
 }
