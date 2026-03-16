@@ -2,13 +2,12 @@ function Dobluyusss() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       if (Dobluyusss) {
-        const Dobluyusss = true;
 
-        resolve("I know you are a goat!!");
+        resolve("I know you are a goat!! why don't you think it too");
       } else {
-        reject("Getout of my face!!!!!!");
+        reject("Get out of my face!!!!! I order you ");
       }
-    }, 2000);
+    }, 2000); 
   });
 }
 
