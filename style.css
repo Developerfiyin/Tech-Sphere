@@ -10,9 +10,14 @@ body{
     background: chocolate;
     box-sizing: border-box;
     height: 100vh;
-  color: firebrick;
+  color: brown;
 }
 h1 {
-color: brown;
-size: 23;
+color: purple;
+
+size: 50;
+}
+
+h2 {
+color: beige;
 }
