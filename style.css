@@ -1,11 +1,16 @@
 body{
     background: chocolate;
-    margin: 0;
-    padding: 0;
+    box-sizing: border-box;
     height: 100vh;
-
+  color: firebrick;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+
+}
 h1 {
 color: brown;
+size: 23;
 }
