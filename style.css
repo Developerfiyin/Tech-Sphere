@@ -1,7 +1,11 @@
 body{
-    background-color: chocolate;
+    background: chocolate;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
 }
 
 h1 {
-color: rgb(216, 202, 202);
+color: brown;
 }
