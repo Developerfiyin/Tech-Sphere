@@ -12,7 +12,20 @@ function Dobluyusss() {
 }
 
 async function ShartMehn() {
-  const DobluyusssRese = await Dobluyusss();
-  console.log(DobluyusssRese);
+  const DobluyusssInthechat = await Dobluyusss();
+  console.log(DobluyusssInthechat);
 }
 ShartMehn();
+
+import express from "express"
+
+const app = express()
+
+app.get('/', (req, res) => {
+  res.send(" Hello World")
+});
+
+app.listen(3000, () => {
+  console.log("Server is running ");
+  
+})
