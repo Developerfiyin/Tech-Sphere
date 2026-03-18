@@ -1,26 +1,27 @@
-function Dobluyusss() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (Dobluyusss) {
+// function Dobluyusss() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (Dobluyusss) {
 
-        resolve("I know you are a goat!! why don't you think it too");
-      } else {
-        reject("Get out of my face!!!!! I order you ");
-      }
-    }, 2000); 
-  });
-}
+//         resolve("I know you are a goat!! why don't you think it too");
+//       } else {
+//         reject("Get out of my face!!!!! I order you ");
+//       }
+//     }, 2000); 
+//   });
+// }
 
-async function ShartMehn() {
-  const DobluyusssInthechat = await Dobluyusss();
-  console.log(DobluyusssInthechat);
-}
-ShartMehn();
+// async function ShartMehn() {
+//   const DobluyusssInthechat = await Dobluyusss();
+//   console.log(DobluyusssInthechat);
+// }
+// ShartMehn();
 
 import express from "express"
-
+import cors from "cors"
 const app = express()
 
+app.use(cors());
 app.get('/', (req, res) => {
   res.send(" Hello World")
 });
