@@ -26,6 +26,13 @@ app.get('/', (req, res) => {
   res.send(" Hello World")
 });
 
+app.get('/students', (req,res) => {
+  res.send("Dobluyuss in the chat Mehn !")
+});
+
+app.post('/students', (req, res) => {
+  res.send()
+})
 app.listen(3000, () => {
   console.log("Server is running on port 3000 ");
   
