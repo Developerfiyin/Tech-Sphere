@@ -15,10 +15,6 @@ try {
 console.log(" what are you looking for ");
 console.log("okay jaw naw, i had a dream ");
 console.log(okay);
-
-
-
-
 }
 catch(err) {
 console.error("Your error is ", err);
