@@ -29,7 +29,7 @@ finally {
 // }
 // ShartMehn();
 
-import express from "express"
+import express fro
 import cors from "cors"
 const app = express()
 
