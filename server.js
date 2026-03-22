@@ -26,36 +26,10 @@
 // }
 // ShartMehn();
 
-
-
-
-
-
-
-
-
-
-
 import express from "express";
 //const express = require("express");
 //import cors from "cors";
 const app = express();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //app.use(cors());
 app.use(express.json());
@@ -80,16 +54,6 @@ app.post("/students", (req, res) => {
    const student = {name ,email, age}
    students.push(student)
   
-
-
-
-
-
-
-
-
-
-
    res.status(200).send(" Product Api created sucessfully!")
 });
 
