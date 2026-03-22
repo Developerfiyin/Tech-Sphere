@@ -26,11 +26,14 @@ try {
 // }
 // ShartMehn();
 
-import express from "express";
-import cors from "cors";
+//import express from "express";
+const express = require("express");
+//import cors from "cors";
 const app = express();
 
-app.use(cors());
+//app.use(cors());
+app.use(express.json());
+let students = [];
 
 app.get("/", (req, res) => {
   res.send(" Hello World !!!!!!!!!!!!");
@@ -40,14 +43,15 @@ app.get("/students", (req, res) => {
   res.send("Dobluyuss in the chat Mehn !");
 });
 
-const students = [];
-
 app.post("/students", (req, res) => {
   const [name, email, age] = req.body;
 
   if (!name || !email || !age) {
     return res.status(400).send(" All files are required");
   }
+  const student = { name, email, age };
+  students.push(student);
+  res.status(200).send("Your api is running");
 });
 
 app.listen(3000, () => {
