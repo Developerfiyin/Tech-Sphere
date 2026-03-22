@@ -43,16 +43,7 @@ app.get("/students", (req, res) => {
   res.send("Dobluyuss in the chat Mehn !");
 });
 
-app.post("/students", (req, res) => {
-  const [name, email, age] = req.body;
 
-  if (!name || !email || !age) {
-    return res.status(400).send(" All files are required");
-  }
-  const student = { name, email, age };
-  students.push(student);
-  res.status(200).send("Your api is running");
-});
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000 ");
