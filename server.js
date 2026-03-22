@@ -57,6 +57,11 @@ app.post("/students", (req, res) => {
    res.status(200).send(" Product Api created sucessfully!")
 });
 
+
+app.get('/studentss', (req, res) => {
+  res.json(students)
+}) 
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000 ");
 });
