@@ -1,4 +1,6 @@
 const express = require("express")
+const app = express();
+app.use(express.json())
 
 function add(a, b) {
     return (
@@ -12,4 +14,10 @@ function subtract(a , b) {
     )
 }
 
-module.exports = {add, subtract}
+function Mutiply (a, b,c){
+return (
+    a * b* c
+)
+}
+
+module.exports = {add, subtract, Mutiply}

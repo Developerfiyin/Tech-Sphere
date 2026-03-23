@@ -6,7 +6,9 @@ app.use(express.json());
 const Math = require('./Math')
 
 console.log(Math.add(9, 9));
-console.log(Math.subtract(90,8))
+console.log(Math.subtract(90,8));
+console.log(Math.Mutiply(9,90,89));
+
 
 
 // function Dobluyusss() {
