@@ -1,3 +1,14 @@
+const express = require("express")
+const app = express();
+
+app.use(express.json());
+
+const Math = require('./Math')
+
+console.log(Math.add(9, 9));
+console.log(Math.subtract(90,8))
+
+
 // function Dobluyusss() {
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
@@ -26,13 +37,11 @@
 // }
 // ShartMehn();
 
-import express from "express";
+
 //const express = require("express");
 //import cors from "cors";
-const app = express();
 
 //app.use(cors());
-app.use(express.json());
 
 
 app.get("/", (req, res) => {
