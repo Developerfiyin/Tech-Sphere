@@ -9,7 +9,7 @@ console.log(Math.add(9, 9));
 console.log(Math.subtract(90,8));
 console.log(Math.Mutiply(9,90,89));
 
-
+console.log(Math.handleButton(90) )
 
 // function Dobluyusss() {
 //   return new Promise((resolve, reject) => {

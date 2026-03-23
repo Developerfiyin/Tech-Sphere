@@ -6,18 +6,25 @@ function add(a, b) {
     return (
         a + b 
     )
-}
+};
 
 function subtract(a , b) {
     return (
         a - b 
     )
-}
+};
 
-function Mutiply (a, b,c){
+function Mutiply (a, b, c){
 return (
     a * b* c
 )
-}
+};
 
-module.exports = {add, subtract, Mutiply}
+function handleButton (count) {
+    
+    return (
+ count + 9
+    )
+} 
+
+module.exports = {add, subtract, Mutiply, handleButton}
