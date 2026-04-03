@@ -20,19 +20,7 @@ const todos = [ {
   {  id: 2, names: "ogoba", completed: false  }
 ]
 
-app.get("/todos", (req, res) => {
-  req.status(200).res.json(todos)
-});
 
- app.post("/todos", (req, res) => {
-    const newTodo = {id : todos.length + 1, ...req.body }
-    todos.push(newTodo)
-    res.status(201).json(newTodo)
-
- } )
-
-// function Dobluyusss() {
-  
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       if (Dobluyusss) {
@@ -91,6 +79,19 @@ app.post("/students", (req, res) => {
    res.status(200).send( " Product Api created sucessfully ! " )
 });
 
+app.get("/todos", (req, res) => {
+  res.status(200).json(todos)
+});
+
+ app.post("/todos", (req, res) => {
+    const newTodo = {id : todos.length + 1, ...req.body }
+    todos.push(newTodo)
+    res.status(201).json(newTodo)
+
+ } );
+
+// function Dobluyusss() {
+  
 
 app.get('/studentss', (req, res) => {
   res.json(students)
@@ -98,6 +99,6 @@ app.get('/studentss', (req, res) => {
 
 
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000 ");
+app.listen(4000, () => {
+  console.log("Server is running on port 4000 ");
 });
