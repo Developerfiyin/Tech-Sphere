@@ -1,4 +1,5 @@
-const express = require("express")
+const express = require("express");
+
 const app = express();
 
 app.use(express.json());
@@ -6,12 +7,29 @@ app.use(express.json());
 const Math = require('./Math')
 
 console.log(Math.add(9, 9));
-console.log(Math.subtract(90,8));
-console.log(Math.Mutiply(9,90,89));
 
-console.log(Math.handleButton(90) )
+console.log(Math.subtract(90, 8));
+
+console.log(Math.Mutiply(9, 90, 89));
+
+console.log(Math.handleButton(90)); 
+
+const todos = [ {
+    id: 1, names: "tolalope", completed: true },
+
+  {  id: 2, names: "ogoba", completed: false
+},]
+
+
+ app.post("/todos", (req, res) => {
+    const newTodo = {id : todos.length + 1, ...req.body }
+    todos.push(newTodo)
+    res.status(201).json(todos)
+
+ } )
 
 // function Dobluyusss() {
+  
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       if (Dobluyusss) {
@@ -49,11 +67,14 @@ console.log(Math.handleButton(90) )
 app.get("/", (req, res) => {
   res.send(" Hello World !!!!!!!!!!");
 });
+
 let students = [];
 
 app.get("/students", (req, res) => {
   res.send("Dobluyuss in the chat Mehn !");
 });
+
+
 
 app.post("/students", (req, res) => {
   const {name , email, age} = req.body
@@ -64,14 +85,15 @@ app.post("/students", (req, res) => {
  
    const student = {name ,email, age}
    students.push(student)
-  
-   res.status(200).send(" Product Api created sucessfully!")
+   res.status(200).send( " Product Api created sucessfully ! " )
 });
 
 
 app.get('/studentss', (req, res) => {
   res.json(students)
-}) 
+});
+
+
 
 app.listen(3000, () => {
   console.log("Server is running on port 3000 ");
