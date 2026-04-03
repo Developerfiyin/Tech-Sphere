@@ -15,16 +15,19 @@ console.log(Math.Mutiply(9, 90, 89));
 console.log(Math.handleButton(90)); 
 
 const todos = [ {
-    id: 1, names: "tolalope", completed: true },
+    id: 1, names: "tolalope", completed: false },
 
-  {  id: 2, names: "ogoba", completed: false
-},]
+  {  id: 2, names: "ogoba", completed: false  }
+]
 
+app.get("/todos", (req, res) => {
+  req.status(200).res.json(todos)
+});
 
  app.post("/todos", (req, res) => {
     const newTodo = {id : todos.length + 1, ...req.body }
     todos.push(newTodo)
-    res.status(201).json(todos)
+    res.status(201).json(newTodo)
 
  } )
 
