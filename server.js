@@ -4,7 +4,8 @@ const app = express();
 
 app.use(express.json());
 
-const Math = require('./Math')
+const Math = require('./Math');
+const messages = require("dote/src/messages");
 
 console.log(Math.add(9, 9));
 
@@ -25,12 +26,20 @@ const books = [
   { id: 3, title: "1984", author: "George Orwell" },
 ]
 
+const newbooks = {id: books.length + 1, title , author} = req.body
+if (!title || !author) {
+  res.status(400).json({"message": "fill it our correctly!!!!!!!!!!!!!"})
+  
+}
+console.log(books);
 
+else if(title && author) {
+  res.status(201).json(newbooks)
+}
 app.get("/books", (req, res) => {
   res.status(200).json({books})
-  books.push(books);
-}
-
+  books.push(newbooks);
+});
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
 //       if (Dobluyusss) {
