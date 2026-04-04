@@ -37,15 +37,11 @@ app.post("/books", (req,res) => {
  }
  console.log(books);
 
- const book =  (title && author) {
-  todos.push(books))
- }
-  {
-  res.status(201).json(newbooks)
+
 }
 
 
-}
+
 )
 
 app.get("/books", (req, res) => {
