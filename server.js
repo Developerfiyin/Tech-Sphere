@@ -19,7 +19,17 @@ const todos = [ {
 
   {  id: 2, names: "ogoba", completed: false  }
 ]
+const books = [
+  { id: 1, title: "The Great Gatsby", author: "F. Scott Fitzgerald" },  
+  { id: 2, title: "To Kill a Mockingbird", author: "Harper Lee" },
+  { id: 3, title: "1984", author: "George Orwell" },
+]
 
+
+app.get("/books", (req, res) => {
+  res.status(200).json({books})
+  books.push(books);
+}
 
 //   return new Promise((resolve, reject) => {
 //     setTimeout(() => {
