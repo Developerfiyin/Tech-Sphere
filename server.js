@@ -6,6 +6,7 @@ app.use(express.json());
 
 const Math = require('./Math');
 const messages = require("dote/src/messages");
+const Tags = require("dote/src/tags");
 
 console.log(Math.add(9, 9));
 
@@ -35,19 +36,19 @@ app.post("/books", (req,res) => {
       return res.status(400).json({ messages:" All field sare important!!!!!!!!!!!!!!!!!!!!"})
     }
 
-  const newbooks = {id: books.length + 1, ...req.body}= req.body;
- if (!title || !author) {
-  res.status(400).json({"message": "fill it our correctly!!!!!!!!!!!!!"})
+  const newbooks = {id: books.length + 1, title, author} = req.body;
+  books.push(newbooks);
+  res.status(201).json(newbooks);
+
   
- }
- console.log(books);
-
-
-}
+ 
 
 
 
-)
+
+
+
+})
 
 app.get("/books", (req, res) => {
   res.status(200).json({books})
