@@ -29,24 +29,15 @@ const books = [
 
 
 
-app.post("/books", (req,res) => {
- 
+app.post("/books", (req, res) => {
     const {title, author} = req.body;
     if (! title || !author) {
-      return res.status(400).json({ messages:" All field sare important!!!!!!!!!!!!!!!!!!!!"})
+      return res.status(400).json({ messages:" All field are important!!!!!!!!!!!!!!!!!!!"})
     }
 
-  const newbooks = {id: books.length + 1, title, author} = req.body;
+  const newbooks = {id: books.length + 1, title, author}
   books.push(newbooks);
-  res.status(201).json(newbooks);
-
-  
- 
-
-
-
-
-
+  res.status(201).json(books);
 
 })
 
