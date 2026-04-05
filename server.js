@@ -29,8 +29,13 @@ const books = [
 
 
 app.post("/books", (req,res) => {
+ 
+    const {title, author} = req.body;
+    if (! title || !author) {
+      return res.status(400).json({ messages:" All field sare important!!!!!!!!!!!!!!!!!!!!"})
+    }
 
-  const newbooks = {id: books.length + 1, title , author} = req.body
+  const newbooks = {id: books.length + 1, ...req.body}= req.body;
  if (!title || !author) {
   res.status(400).json({"message": "fill it our correctly!!!!!!!!!!!!!"})
   
