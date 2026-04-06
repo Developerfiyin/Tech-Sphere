@@ -88,8 +88,6 @@ app.get("/students", (req, res) => {
   res.send("Dobluyuss in the chat Mehn !");
 });
 
-
-
 app.post("/students", (req, res) => {
   const {name , email, age} = req.body
   if (!name || !email || !age) {
@@ -119,8 +117,6 @@ app.get("/todos", (req, res) => {
 app.get('/studentss', (req, res) => {
   res.json(students)
 });
-
-
 
 app.listen(4000, () => {
   console.log("Server is running on port 4000 ");
