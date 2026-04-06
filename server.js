@@ -32,7 +32,7 @@ const books = [
 app.post("/books", (req, res) => {
     const {title, author} = req.body;
     if (! title || !author) {
-      return res.status(400).json({ messages:" All field are important!!!!!!!!!!!!!!!!!!!"})
+      return res.status(400).json({ messages:" All field are important!!!!!!!!!"})
     }
 
   const newbooks = {id: books.length + 1, title, author}
@@ -64,6 +64,7 @@ app.get("/books", (req, res) => {
 //   console.log("okay jaw naw, i had a dream ");
 //   console.log(okay);
 // } catch (err) {
+
 //   console.error("Your error is ", err);
 // } finally {
 //   console.log("i will execte anyways");
@@ -74,10 +75,8 @@ app.get("/books", (req, res) => {
 // }
 // ShartMehn();
 
-
 //const express = require("express");
 //import cors from "cors";
-
 //app.use(cors());
 
 
