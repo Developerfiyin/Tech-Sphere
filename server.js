@@ -16,6 +16,44 @@ console.log(Math.Mutiply(9, 90, 89));
 
 console.log(Math.handleButton(90)); 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 const todos = [ {
     id: 1, names: "tolalope", completed: false },
   {  id: 2, names: "ogoba", completed: false  }
