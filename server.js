@@ -16,44 +16,6 @@ console.log(Math.Mutiply(9, 90, 89));
 
 console.log(Math.handleButton(90)); 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const todos = [ {
     id: 1, names: "tolalope", completed: false },
   {  id: 2, names: "ogoba", completed: false  }
@@ -111,9 +73,6 @@ app.get("/books", (req, res) => {
 // }
 // ShartMehn();
 
-
-
-
 //const express = require("express");
 //import cors from "cors";
 //app.use(cors());
@@ -129,6 +88,8 @@ app.get("/students", (req, res) => {
   res.send("Dobluyuss in the chat Mehn !");
 });
 
+
+
 app.post("/students", (req, res) => {
   const {name , email, age} = req.body
   if (!name || !email || !age) {
@@ -138,7 +99,7 @@ app.post("/students", (req, res) => {
  
    const student = {name ,email, age}
    students.push(student)
-res.status(200).send( " Product Api created sucessfully!")
+res.status(200).send( " Product Api created sucessfully!" )
 });
 
 app.get("/todos", (req, res) => {
