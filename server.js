@@ -3,11 +3,6 @@ const express = require("express");
 const app = express();
 
 app.use(express.json());
-
-const Math = require('./Math');
-const messages = require("dote/src/messages");
-const Tags = require("dote/src/tags");
-
 console.log(Math.add(9, 9));
 
 console.log(Math.subtract(90, 8));
@@ -44,34 +39,31 @@ app.get("/books", (req, res) => {
   books.push(newbooks);
 });
 
+return new Promise((resolve, reject) => {
+   setTimeout(() => {
+      if (Dobluyusss) {
+        resolve("I know you are a goat!! why don't you think it too");
+      } else {
+        reject("Get out of my face!!!!! I order you ");
+      }
+}, 2000);
+  });
 
-//   return new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//       if (Dobluyusss) {
 
-//         resolve("I know you are a goat!! why don't you think it too");
-//       } else {
-//         reject("Get out of my face!!!!! I order you ");
-//       }
-//     }, 2000);
-//   });
-// }
+try {
+  console.log(" what are you looking for ");
+  console.log("okay jaw naw, i had a dream ");
+  console.log(okay);
+ } catch (err) {
 
-// try {
-//   console.log(" what are you looking for ");
-//   console.log("okay jaw naw, i had a dream ");
-//   console.log(okay);
-// } catch (err) {
+  console.error("Your error is ", err); } finally {
 
-//   console.error("Your error is ", err);
-// } finally {
-//   console.log("i will execte anyways");
-// }
-// async function ShartMehn() {
-//   const DobluyusssInthechat = await Dobluyusss();
-//   console.log(DobluyusssInthechat);
-// }
-// ShartMehn();
+  console.log("i will execte anyways");
+ } async function ShartMehn() {
+   const DobluyusssInthechat = await Dobluyusss();
+  console.log(DobluyusssInthechat);
+ }
+ShartMehn();
 
 //const express = require("express");
 //import cors from "cors";
