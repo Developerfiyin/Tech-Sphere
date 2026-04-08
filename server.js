@@ -35,7 +35,7 @@ app.post("/books", (req, res) => {
 })
 
 app.get("/books", (req, res) => {
-  res.status(200).json({books})
+  res.status(201).json({books})
   books.push(newbooks);
 });
 
